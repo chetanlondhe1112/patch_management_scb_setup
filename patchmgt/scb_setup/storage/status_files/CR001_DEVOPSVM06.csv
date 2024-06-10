@@ -1,0 +1,21 @@
+ST,07-06-2024 04:36:51
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,N Attempting to start...
+StartService,Y
+AgentCommunication,Y
+KBAvailable,KB2267602
+StopService,Y
+StopService,Y
+StartService,Y
+StartService,Y
+Info,Successfully cleared Windows Update cache.
+PatchInfo,Start to install: KB2267602
+PatchInfo,Patch installation failed with result code: orcFailed
+PatchInfo,Update Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.413.154.0) - Current Channel (Broad) failed with error code: -2145099769
+PatchInfo,Patch installation failed with result code: orcFailed
+PatchInfo,Update Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.413.154.0) - Current Channel (Broad) failed with error code: -2145099769
+PatchInfo,Patch installation failed with result code: orcFailed
+PatchInfo,Update Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.413.154.0) - Current Channel (Broad) failed with error code: -2145099769
+PatchInfo,KB2267602 - faild on attempt 3.
+ET,07-06-2024 04:47:04

@@ -1,0 +1,106 @@
+2024-05-30 03:04:36,743 - INFO - File logfile.csv saved to F:/patch-managment-project-16/patch-management-scripting/patchmgt/scb_setup/storage/status_files\logfile.csv
+2024-05-30 03:04:36,782 - INFO - Database updated for ClientID CN002 with file logfile.csv
+2024-05-30 03:06:09,928 - INFO - File logfile.csv saved to F:/patch-managment-project-16/patch-management-scripting/patchmgt/scb_setup/storage/status_files\logfile.csv
+2024-05-30 03:06:09,933 - INFO - Database updated for ClientID CN002 with file logfile.csv
+2024-05-30 03:14:00,784 - INFO - File logfile.csv saved to F:/patch-managment-project-16/patch-management-scripting/patchmgt/scb_setup/storage/status_files\logfile.csv
+2024-05-30 03:14:00,796 - INFO - Database updated for ClientID CN002 with file logfile.csv
+2024-05-30 03:14:00,814 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2024-05-30 03:14:00,823 - INFO - Socket connected: <socket.socket fd=1900, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 54292, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-05-30 03:14:00,823 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001AD52561CC0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001AD52561CC0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-05-30 03:14:00,887 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001AD52561CC0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-05-30 03:14:00,887 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001AD52561CC0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-05-30 03:14:00,887 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001AD52561CC0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-05-30 03:14:00,887 - INFO - Created channel=1
+2024-05-30 03:14:01,144 - INFO - Closing connection (200): Normal shutdown
+2024-05-30 03:14:01,144 - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001AD52561CC0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-05-30 03:14:01,188 - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001AD52561CC0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-05-30 03:14:01,188 - INFO - Closing connection (200): 'Normal shutdown'
+2024-05-30 03:14:01,193 - INFO - Aborting transport connection: state=1; <socket.socket fd=1900, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 54292, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-05-30 03:14:01,193 - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=1900, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 54292, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-05-30 03:14:01,193 - INFO - Deactivating transport: state=1; <socket.socket fd=1900, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 54292, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-05-30 03:14:01,193 - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-05-30 03:14:01,193 - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-05-30 03:14:01,193 - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=1900, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 54292, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-05-30 03:14:01,193 - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-05-30 03:14:01,193 - INFO - Message sent to RabbitMQ: {"ClientID": "CN002", "Status": "True", "filename": "logfile.csv", "file_path": "F:/patch-managment-project-16/patch-management-scripting/patchmgt/scb_setup/storage/status_files\\logfile.csv", "file_content": "name,status\r\nCN001,TRUE\r\n"}
+2024-06-04 08:58:20,035 - INFO - File test.csv saved to /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv
+2024-06-04 08:58:20,046 - ERROR - ClientID : CN004 not found
+2024-06-04 08:58:20,047 - ERROR - Unexpected error: 
+2024-06-04 08:58:49,977 - INFO - File test.csv saved to /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv
+2024-06-04 08:58:49,983 - ERROR - ClientID : CN004 not found
+2024-06-04 08:59:01,576 - INFO - File test.csv saved to /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv
+2024-06-04 08:59:01,613 - INFO - Database updated for ClientID CN002 with file test.csv
+2024-06-04 08:59:01,623 - INFO - Pika version 1.3.2 connecting to ('0.0.0.0', 5672)
+2024-06-04 08:59:01,624 - INFO - Socket connected: <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 59848), raddr=('127.0.0.1', 5672)>
+2024-06-04 08:59:01,626 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f23a9bad2b0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f23a9bad2b0> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>).
+2024-06-04 08:59:01,689 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f23a9bad2b0> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-04 08:59:01,690 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f23a9bad2b0> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-04 08:59:01,690 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f23a9bad2b0> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-04 08:59:01,691 - INFO - Created channel=1
+2024-06-04 08:59:01,715 - INFO - Closing connection (200): Normal shutdown
+2024-06-04 08:59:01,715 - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f23a9bad2b0> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>>
+2024-06-04 08:59:01,717 - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f23a9bad2b0> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>>
+2024-06-04 08:59:01,718 - INFO - Closing connection (200): 'Normal shutdown'
+2024-06-04 08:59:01,720 - INFO - Aborting transport connection: state=1; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 59848), raddr=('127.0.0.1', 5672)>
+2024-06-04 08:59:01,720 - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 59848), raddr=('127.0.0.1', 5672)>
+2024-06-04 08:59:01,720 - INFO - Deactivating transport: state=1; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 59848), raddr=('127.0.0.1', 5672)>
+2024-06-04 08:59:01,721 - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-04 08:59:01,721 - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-04 08:59:01,722 - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 59848), raddr=('127.0.0.1', 5672)>
+2024-06-04 08:59:01,722 - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-06-04 08:59:01,722 - INFO - Message sent to RabbitMQ: {"ClientID": "CN002", "Status": "True", "filename": "test.csv", "file_path": "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv", "file_content": "Sr. No.,Title\r\n"}
+2024-06-04 09:30:07,100 - ERROR - ScheduleData not found for DeviceHostname : Test and DeviceIPAddress : 192.168.244.81
+2024-06-04 09:45:40,631 - INFO - Scheduled data sent for DeviceHostname : VM1 and DeviceIPAddress : 192.168.244.81
+2024-06-04 10:10:29,118 - INFO - Scheduled data sent for DeviceHostname : VM1 and DeviceIPAddress : 192.168.244.81
+2024-06-04 10:12:13,580 - INFO - Scheduled data sent for DeviceHostname : VM1 and DeviceIPAddress : 192.168.244.81
+2024-06-04 10:14:36,176 - INFO - Scheduled data sent for DeviceHostname : VM1 and DeviceIPAddress : 192.168.244.81
+2024-06-04 10:19:40,083 - INFO - Scheduled data sent for DeviceHostname : VM1 and DeviceIPAddress : 192.168.244.81
+2024-06-07 05:04:26,143 - INFO - File test.csv saved to /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv
+2024-06-07 05:04:26,145 - ERROR - Database error: syntax error at or near "CR005"
+LINE 1: ...dateddate='2024-06-07 05:04:26.143601 WHERE cr_id = 'CR005';
+                                                                ^
+
+2024-06-07 05:05:03,794 - INFO - File test.csv saved to /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv
+2024-06-07 05:05:03,904 - INFO - Database updated for ClientID CR005 with file test.csv
+2024-06-07 05:05:03,915 - INFO - Pika version 1.3.2 connecting to ('0.0.0.0', 5672)
+2024-06-07 05:05:03,916 - INFO - Socket connected: <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34200), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:05:03,918 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb4e03d8a90>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb4e03d8a90> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>).
+2024-06-07 05:05:03,930 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb4e03d8a90> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-07 05:05:03,931 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb4e03d8a90> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-07 05:05:03,931 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb4e03d8a90> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-07 05:05:03,932 - INFO - Created channel=1
+2024-06-07 05:05:03,941 - INFO - Closing connection (200): Normal shutdown
+2024-06-07 05:05:03,941 - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb4e03d8a90> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>>
+2024-06-07 05:05:03,943 - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb4e03d8a90> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>>
+2024-06-07 05:05:03,944 - INFO - Closing connection (200): 'Normal shutdown'
+2024-06-07 05:05:03,946 - INFO - Aborting transport connection: state=1; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34200), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:05:03,946 - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34200), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:05:03,946 - INFO - Deactivating transport: state=1; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34200), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:05:03,947 - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-07 05:05:03,947 - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-07 05:05:03,948 - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34200), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:05:03,948 - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-06-07 05:05:03,949 - INFO - Message sent to RabbitMQ: {"CRId": "CR005", "Status": "True", "filename": "test.csv", "file_path": "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv", "file_content": "Sr. No.,Title\r\n"}
+2024-06-07 05:07:34,202 - INFO - File test.csv saved to /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv
+2024-06-07 05:07:34,224 - ERROR - CRId : CR005 not found
+2024-06-07 05:09:01,578 - INFO - File test.csv saved to /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv
+2024-06-07 05:09:01,633 - INFO - Database updated for ClientID CR005 with file test.csv
+2024-06-07 05:09:01,645 - INFO - Pika version 1.3.2 connecting to ('0.0.0.0', 5672)
+2024-06-07 05:09:01,647 - INFO - Socket connected: <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34432), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:09:01,649 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f2f2a88f970>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f2f2a88f970> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>).
+2024-06-07 05:09:01,674 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f2f2a88f970> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-07 05:09:01,675 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f2f2a88f970> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-07 05:09:01,675 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f2f2a88f970> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>
+2024-06-07 05:09:01,676 - INFO - Created channel=1
+2024-06-07 05:09:01,685 - INFO - Closing connection (200): Normal shutdown
+2024-06-07 05:09:01,685 - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f2f2a88f970> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>>
+2024-06-07 05:09:01,691 - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f2f2a88f970> params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>>
+2024-06-07 05:09:01,691 - INFO - Closing connection (200): 'Normal shutdown'
+2024-06-07 05:09:01,699 - INFO - Aborting transport connection: state=1; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34432), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:09:01,700 - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34432), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:09:01,700 - INFO - Deactivating transport: state=1; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34432), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:09:01,700 - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-07 05:09:01,701 - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-07 05:09:01,701 - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34432), raddr=('127.0.0.1', 5672)>
+2024-06-07 05:09:01,702 - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=0.0.0.0 port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-06-07 05:09:01,702 - INFO - Message sent to RabbitMQ: {"CRId": "CR005", "Status": "True", "filename": "test.csv", "file_path": "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files/test.csv", "file_content": "Sr. No.,Title\r\n"}

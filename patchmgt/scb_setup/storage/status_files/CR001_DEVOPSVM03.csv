@@ -1,0 +1,6 @@
+ST,10-06-2024 03:12:46
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,N Attempting to start...
+StartService,wuauservCannot start service 'wuauserv' on computer '.'.
+ET,10-06-2024 03:12:46

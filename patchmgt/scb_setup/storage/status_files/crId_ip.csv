@@ -1,0 +1,10 @@
+Error,Failed to call the API. Status code: NotFound
+Error,Failed to call the API. Status code: NotFound
+ST,05-06-2024 21:54:46
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,N Attempting to start...
+StartService,Y
+AgentCommunication,Y
+KBAvailable,KB2267602
+ET,05-06-2024 21:56:06

@@ -1,0 +1,16 @@
+ST,06-06-2024 00:23:29
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,N Attempting to start...
+StartService,Y
+AgentCommunication,Y
+KBAvailable,N
+PatchInfo,No patches pending from the last 7 days.
+ET,06-06-2024 00:24:49
+ST,06-06-2024 02:02:16
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,Y
+AgentCommunication,Y
+KBAvailable,N
+ET,06-06-2024 02:02:32

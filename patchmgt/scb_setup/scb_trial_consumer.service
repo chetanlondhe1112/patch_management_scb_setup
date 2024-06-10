@@ -1,0 +1,12 @@
+[Unit]
+Description=SCB Trial Consumer Service Script
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/rabitmq_service
+ExecStart=/usr/bin/python /root/scb_dev/patch-management-scripting/patchmgt/scb_setup/rabitmq_service/scb_consumer_v1.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

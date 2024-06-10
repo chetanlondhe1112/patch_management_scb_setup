@@ -1,0 +1,43 @@
+ST,05-06-2024 02:54:07
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,Y
+AgentCommunication,Y
+KBAvailable,KB2267602
+PatchInfo,Start to install: KB2267602
+Error,Download and installation status: 0x80240044
+Error,Download and installation status: 0x80240044
+Error,Download and installation status: 0x80240044
+PatchInfo,KB2267602 - faild on attempt 3.
+ET,05-06-2024 02:57:38
+ST,05-06-2024 02:59:38
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,Y
+AgentCommunication,Y
+KBAvailable,KB2267602
+PatchInfo,Start to install: KB2267602
+Error,Download and installation status: 0x80240044
+Error,Download and installation status: 0x80240044
+Error,Download and installation status: 0x80240044
+PatchInfo,KB2267602 - faild on attempt 3.
+ET,05-06-2024 03:03:05
+ST,05-06-2024 03:05:05
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,Y
+AgentCommunication,Y
+KBAvailable,KB2267602
+PatchInfo,Start to install: KB2267602
+Error,Download and installation status: 0x80240044
+Error,Download and installation status: 0x80240044
+ST,05-06-2024 03:21:15
+UpdateConfigFile,Y
+DriveSpace,Y
+ServicesRunning,N Attempting to start...
+StartService,Y
+AgentCommunication,Y
+KBAvailable,KB2267602
+PatchInfo,Start to install: KB2267602
+PatchInfo,KB2267602 - Installed on attempt 1
+ET,05-06-2024 03:22:58
