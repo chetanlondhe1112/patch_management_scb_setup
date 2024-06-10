@@ -1,0 +1,145 @@
+-- Table: public.CRApprovalData
+
+-- DROP TABLE IF EXISTS public."CRApprovalData";
+
+CREATE TABLE IF NOT EXISTS public."CRApprovalData"
+(
+    "Id" bigint NOT NULL DEFAULT nextval('"CRApprovalData_Id_seq"'::regclass),
+    "CRId" character varying(20) COLLATE pg_catalog."default",
+    "ClientId" character varying(20) COLLATE pg_catalog."default",
+    "StartDateTime" date,
+    "EndDateTime" date,
+    "DeviceHostName" character varying(100) COLLATE pg_catalog."default",
+    "DeviceIPAddress" character varying(15) COLLATE pg_catalog."default",
+    "LogFileName" character varying(100) COLLATE pg_catalog."default",
+    "Status" character varying(10) COLLATE pg_catalog."default",
+    "CreatedDate" date,
+    "UpdatedDate" date,
+    CONSTRAINT "CRApprovalData_pkey" PRIMARY KEY ("Id")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."CRApprovalData"
+    OWNER to postgres;
+
+-- Table: public.DeviceStatus
+
+-- DROP TABLE IF EXISTS public."DeviceStatus";
+
+CREATE TABLE IF NOT EXISTS public."DeviceStatus"
+(
+    "Id" bigint NOT NULL DEFAULT nextval('"DeviceStatus_Id_seq"'::regclass),
+    "CRId" character varying(20) COLLATE pg_catalog."default",
+    "DeviceHostName" character varying(100) COLLATE pg_catalog."default",
+    "DeviceIPAddress" character varying(15) COLLATE pg_catalog."default",
+    "Status" character varying(10) COLLATE pg_catalog."default",
+    "Reason" character varying(100) COLLATE pg_catalog."default",
+    "CreatedDate" date,
+    CONSTRAINT "DeviceStatus_pkey" PRIMARY KEY ("Id")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."DeviceStatus"
+    OWNER to postgres;
+
+-- Table: public.LogDetails
+
+-- DROP TABLE IF EXISTS public."LogDetails";
+
+CREATE TABLE IF NOT EXISTS public."LogDetails"
+(
+    "Id" bigint NOT NULL DEFAULT nextval('"LogDetails_Id_seq"'::regclass),
+    "CRId" character varying(20) COLLATE pg_catalog."default",
+    "DeviceHostName" character varying(100) COLLATE pg_catalog."default",
+    "DeviceIPAddress" character varying(15) COLLATE pg_catalog."default",
+    "Status" character varying(10) COLLATE pg_catalog."default",
+    "LogFile" character varying COLLATE pg_catalog."default",
+    "CreatedDate" date,
+    CONSTRAINT "LogDetails_pkey" PRIMARY KEY ("Id")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."LogDetails"
+    OWNER to postgres;
+
+    
+-- Table: public.Settings
+
+-- DROP TABLE IF EXISTS public."Settings";
+
+CREATE TABLE IF NOT EXISTS public."Settings"
+(
+    "Id" bigint NOT NULL DEFAULT nextval('"Settings_Id_seq"'::regclass),
+    "ToolName" character varying(100) COLLATE pg_catalog."default",
+    "HostName" character varying(100) COLLATE pg_catalog."default",
+    "AgentExeName" character varying(100) COLLATE pg_catalog."default",
+    "Services display name" character varying(100) COLLATE pg_catalog."default",
+    "Agent Location" character varying COLLATE pg_catalog."default",
+    "Patch download Path" character varying COLLATE pg_catalog."default",
+    "SerivcesName" character varying(100) COLLATE pg_catalog."default",
+    "CreatedDate" date,
+    "UpdatedDate" date,
+    CONSTRAINT "Settings_pkey" PRIMARY KEY ("Id")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."Settings"
+    OWNER to postgres;
+
+-- Table: public.cr_data
+
+-- DROP TABLE IF EXISTS public.cr_data;
+
+CREATE TABLE IF NOT EXISTS public.cr_data
+(
+    id integer NOT NULL DEFAULT nextval('cr_data_id_seq'::regclass),
+    cr_id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    start_datetime timestamp without time zone NOT NULL,
+    end_datetime timestamp without time zone NOT NULL,
+    configuration_file character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    vm_id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    vm_address character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    logfile character varying(50) COLLATE pg_catalog."default",
+    status character varying(10) COLLATE pg_catalog."default",
+    logfilepath character varying(200) COLLATE pg_catalog."default",
+    clientid character varying(10) COLLATE pg_catalog."default",
+    flag character varying(10) COLLATE pg_catalog."default",
+    createddate timestamp without time zone,
+    updateddate timestamp without time zone,
+    CONSTRAINT cr_data_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.cr_data
+    OWNER to postgres;
+
+-- Table: public.settings
+
+-- DROP TABLE IF EXISTS public.settings;
+
+CREATE TABLE IF NOT EXISTS public.settings
+(
+    retrychances integer,
+    retrychancestime integer,
+    lastdaysofkbavailable integer,
+    requiredfreespacegb integer,
+    kbarticlepath character varying(255) COLLATE pg_catalog."default",
+    toolname character varying(50) COLLATE pg_catalog."default",
+    hostname character varying(50) COLLATE pg_catalog."default",
+    agentexename character varying(50) COLLATE pg_catalog."default",
+    servicedisplayname character varying(100) COLLATE pg_catalog."default",
+    servicename character varying(50) COLLATE pg_catalog."default",
+    agentlocation character varying(255) COLLATE pg_catalog."default",
+    clientid character varying(50) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.settings
+    OWNER to postgres;
+
