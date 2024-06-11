@@ -9,14 +9,16 @@ __pycache__/
 
 # C extensions
 *.so
-
+.toml
 # env folder
 patch_env
+
+# folders
+scb_old_files
 
 # config file
 config
 scb_config.toml
-
 
 # Distribution / packaging
 .Python
@@ -123,7 +125,7 @@ ipython_config.py
 #secrets.toml
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
-
+config.toml
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
@@ -139,6 +141,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+config
 
 # Spyder project settings
 .spyderproject
