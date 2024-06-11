@@ -329,3 +329,62 @@ pika.exceptions.AMQPConnectionError
 2024-06-07 06:05:24,785 - ERROR - Failed to send data to API: 500 {"detail":"Internal Server Error"}
 2024-06-07 06:08:39,208 - INFO - [2024-06-07 06:08:39.208024] Received b'{"cr_id": "CR006", "start_datetime": "3/5/2024 20:33:24", "end_datetime": "3/5/2024 23:44:55", "configuration_file": "web.config", "vm_id": "VM6", "vm_address": "255.255.255.257", "logfile": "", "status": "", "logfilepath": "", "clientid": "CN006", "tool_name": "Bigfix", "host_name": "Bigfix", "agent_exe_name": "BESclient.exe", "service_display_name": "BESclient", "agent_location": "", "patch_download_path": "", "createddate": "07/06/2024 06:08:39", "flag": "N"}'
 2024-06-07 06:08:39,266 - INFO - Data sent to API successfully: {'status': 'success', 'id': 16}
+2024-06-11 10:23:08,486 - INFO - 1 change detected
+2024-06-11 10:23:14,071 - INFO - 1 change detected
+2024-06-11 10:23:27,375 - INFO - 5 changes detected
+2024-06-11 10:24:03,321 - INFO - Pika version 1.3.2 connecting to ('0.0.0.0', 5672)
+2024-06-11 10:24:03,322 - ERROR - Socket failed to connect: <socket.socket fd=868, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 63946)>; error=10049 (Unknown error)
+2024-06-11 10:24:03,323 - ERROR - TCP Connection attempt failed: OSError(10049, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('0.0.0.0', 5672))
+2024-06-11 10:24:03,323 - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error')
+2024-06-11 10:24:03,323 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None.
+2024-06-11 10:24:03,324 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None
+2024-06-11 10:24:03,324 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None
+2024-06-11 10:24:03,324 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "F:\patch-managment-project-16\patch_main\patch_management_scb_setup\patch_env\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2024-06-11 10:24:17,392 - INFO - Pika version 1.3.2 connecting to ('0.0.0.0', 5672)
+2024-06-11 10:24:17,395 - ERROR - Socket failed to connect: <socket.socket fd=656, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 63969)>; error=10049 (Unknown error)
+2024-06-11 10:24:17,396 - ERROR - TCP Connection attempt failed: OSError(10049, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('0.0.0.0', 5672))
+2024-06-11 10:24:17,396 - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error')
+2024-06-11 10:24:17,397 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None.
+2024-06-11 10:24:17,397 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None
+2024-06-11 10:24:17,397 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None
+2024-06-11 10:24:17,398 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "F:\patch-managment-project-16\patch_main\patch_management_scb_setup\patch_env\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2024-06-11 10:24:24,856 - INFO - Pika version 1.3.2 connecting to ('0.0.0.0', 5672)
+2024-06-11 10:24:24,857 - ERROR - Socket failed to connect: <socket.socket fd=1872, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 63988)>; error=10049 (Unknown error)
+2024-06-11 10:24:24,858 - ERROR - TCP Connection attempt failed: OSError(10049, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('0.0.0.0', 5672))
+2024-06-11 10:24:24,859 - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error')
+2024-06-11 10:24:24,859 - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None.
+2024-06-11 10:24:24,860 - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None
+2024-06-11 10:24:24,860 - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(10049, 'Unknown error'); first exception - None
+2024-06-11 10:24:24,861 - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "F:\patch-managment-project-16\patch_main\patch_management_scb_setup\patch_env\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2024-06-11 10:26:22,897 - INFO - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-06-11 10:26:22,900 - INFO - Socket connected: <socket.socket fd=1964, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64099), raddr=('127.0.0.1', 5672)>
+2024-06-11 10:26:22,902 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CF0070E3B0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CF0070E3B0> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>).
+2024-06-11 10:26:25,470 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CF0070E3B0> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>
+2024-06-11 10:26:25,471 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CF0070E3B0> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>
+2024-06-11 10:26:25,472 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CF0070E3B0> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>
+2024-06-11 10:26:25,472 - INFO - Created channel=1
+2024-06-11 10:26:25,599 - INFO - Connected to RabbitMQ server successfully
+2024-06-11 10:26:26,225 - INFO - Queue declared successfully
+2024-06-11 10:26:26,237 - INFO - Consumer set up successfully, waiting for messages
+2024-06-11 10:26:27,228 - INFO - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-06-11 10:26:27,229 - INFO - Socket connected: <socket.socket fd=1836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64111), raddr=('127.0.0.1', 5672)>
+2024-06-11 10:26:27,232 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001911D6BB460>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001911D6BB460> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>).
+2024-06-11 10:26:27,289 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001911D6BB460> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>
+2024-06-11 10:26:27,289 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001911D6BB460> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>
+2024-06-11 10:26:27,290 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001911D6BB460> params=<ConnectionParameters host=127.0.0.1 port=5672 virtual_host=/ ssl=False>>
+2024-06-11 10:26:27,291 - INFO - Created channel=1
+2024-06-11 10:26:27,301 - INFO - Connected to RabbitMQ server successfully
+2024-06-11 10:26:27,303 - INFO - Queue declared successfully
+2024-06-11 10:26:27,307 - INFO - Consumer set up successfully, waiting for messages
