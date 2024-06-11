@@ -13,6 +13,9 @@ __pycache__/
 # env folder
 patch_env
 
+# folders
+scb_old_files
+
 # config file
 config
 scb_config.toml
