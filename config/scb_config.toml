@@ -1,5 +1,5 @@
 # Configuration file for SCB of patch Management Project
-
+# v2.0
 # Database configuration
 [database]
 username = "postgres"

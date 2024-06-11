@@ -14,8 +14,8 @@ __pycache__/
 patch_env
 
 # config file
-config
-scb_config.toml
+#config
+#scb_config.toml
 
 
 # Distribution / packaging
