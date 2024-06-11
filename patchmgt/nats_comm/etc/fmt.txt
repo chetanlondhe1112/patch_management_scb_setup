@@ -1,0 +1,11 @@
+ommMsg struct {
+    Id       int       `json:"id"`
+    MsgId    int       `json:"msgId"`
+    ClientId string    `json:"clientId"`
+    Type     int       `json:"type"`
+    Time     time.Time `json:"time"`
+    MsgType  int       `json:"msgType"`
+    Data     string    `json:"data"`
+}
+
+
