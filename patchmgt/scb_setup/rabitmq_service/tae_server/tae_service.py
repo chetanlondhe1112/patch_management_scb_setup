@@ -1,4 +1,4 @@
-# The TAE Service developed without API communication between postgres database
+# The TAE Service developed without API communication between postgres database and consumer
 # The TAE Service is build to set a commncation service beween noccom and taa (Task Automation Agent) 
 import datetime as dt
 from datetime import date
