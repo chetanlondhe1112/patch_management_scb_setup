@@ -13,6 +13,9 @@ __pycache__/
 # env folder
 patch_env
 
+# config file
+scb_config.toml
+
 
 # Distribution / packaging
 .Python
