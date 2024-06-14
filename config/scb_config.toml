@@ -1,36 +1,38 @@
 # Configuration file for SCB of patch Management Project
-# v2.0.0
+
 # Database configuration
 [database]
+
     [database.cred]
     username = "postgres"
     password = "password"
     host = "localhost"
     port = 5432
-    database = "tae_pgdb"
+    database = "scb_trial_db"
 
     [database.tables]
     crapprovaldata_tbl = "crapprovaldata"
     settings_tbl = "settings"
     lgodetails_tbl = "logdetails"
 
+
 # RabbitMQ configuration
 [rabbitmq]
 
     [rabbitmq.noccom_producer]
     port = 5672 
-    host = "127.0.0.1"
+    host = "0.0.0.0"
     queue = "tae_queue"
     routing_key = "tae.schedule"
 
     [rabbitmq.scb_consumer]
     port = 5672 
-    host = "127.0.0.1"
+    host = "0.0.0.0"
     queue = "tae_queue"
     routing_key = "tae.schedule"
     
     [rabbitmq.scb_producer]
-    host = "127.0.0.1"
+    host = "0.0.0.0"
     port = 5672 
     queue = "tae_queue"
     routing_key = "tae.status"
@@ -45,12 +47,12 @@
 
     # Postgres API
     [api.postgres]
-    host = "127.0.0.1"
+    host = "0.0.0.0"
     port = 5432
 
     # TAE to Agent API
     [api.tae_to_agent]
-    host = "127.0.0.1"
+    host = "0.0.0.0"
     port = 8443
 
 # Logging configuration
@@ -58,15 +60,15 @@
 
     # Status log path
     [log.status_log_path]
-    status_log_path = "F:/patch-managment-project-16/patch_main/patch_management_scb_setup/patchmgt/scb_setup/storage/status_files"
+    status_log_path = "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/storage/status_files"
 
     # API log paths
     [log.api_log_path]
         [log.api_log_path.tae_to_agent]
-        get_schedule_path = "F:/patch-managment-project-16/patch_main/patch_management_scb_setup/patchmgt/scb_setup/logs/api_logs/tae_to_agent/get_schedule_data.log"
-        status_log_upload_path = "F:/patch-managment-project-16/patch_main/patch_management_scb_setup/patchmgt/scb_setup/logs/api_logs/tae_to_agent/status_upload_log_data.log"
+        get_schedule_path = "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/logs/api_logs/tae_to_agent/get_schedule_data.log"
+        status_log_upload_path = "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/logs/api_logs/tae_to_agent/status_upload_log_data.log"
 
     # Rabitmq Service path
     [log.rabbitmq_log_path]
-    scb_consumer_log_path = "F:/patch-managment-project-16/patch_main/patch_management_scb_setup/patchmgt/scb_setup/logs/rabitmq_service_logs/scb_consumer_log.log"
-    scb_producer_log_path = "F:/patch-managment-project-16/patch_main/patch_management_scb_setup/patchmgt/scb_setup/logs/rabitmq_service_logs/scb_producer_log.log"
+    scb_consumer_log_path = "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/logs/rabitmq_service_logs/scb_consumer_log.log"
+    scb_producer_log_path = "/root/scb_dev/patch-management-scripting/patchmgt/scb_setup/logs/rabitmq_service_logs/scb_producer_log.log"
