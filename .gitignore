@@ -15,11 +15,12 @@ patch_env
 
 # folders
 scb_old_files
-
+logs
 # config file
 config
+#tae_config
 scb_config.toml
-
+config.toml
 # Distribution / packaging
 .Python
 build/

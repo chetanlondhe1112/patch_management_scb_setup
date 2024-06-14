@@ -2,11 +2,17 @@
 # v2.0.0
 # Database configuration
 [database]
-username = "postgres"
-password = "postgres"
-host = "localhost"
-port = 5432
-database = "tae_pgdb"
+    [database.cred]
+    username = "postgres"
+    password = "password"
+    host = "localhost"
+    port = 5432
+    database = "tae_pgdb"
+
+    [database.tables]
+    crapprovaldata_tbl = "crapprovaldata"
+    settings_tbl = "settings"
+    lgodetails_tbl = "logdetails"
 
 # RabbitMQ configuration
 [rabbitmq]
@@ -14,20 +20,25 @@ database = "tae_pgdb"
     [rabbitmq.noccom_producer]
     port = 5672 
     host = "127.0.0.1"
-    queue = "hello"
-    routing_key = "hello"
+    queue = "tae_queue"
+    routing_key = "tae.schedule"
 
     [rabbitmq.scb_consumer]
     port = 5672 
     host = "127.0.0.1"
-    queue = "hello"
-    routing_key = "hello"
+    queue = "tae_queue"
+    routing_key = "tae.schedule"
     
     [rabbitmq.scb_producer]
     host = "127.0.0.1"
     port = 5672 
-    queue = "bye"
-    routing_key = "bye"
+    queue = "tae_queue"
+    routing_key = "tae.status"
+
+# Message type configuration
+[messagetype]
+    schedule_data = "161001"
+    status_data = "162001"
 
 # API configuration
 [api]
