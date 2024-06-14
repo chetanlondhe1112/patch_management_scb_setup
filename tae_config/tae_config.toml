@@ -1,0 +1,10 @@
+[tae_config]
+    retrytimes = "3"
+    retrytimelapse = "10 min" 
+    scb = "192.168.1.16"
+    scbport = "8443" # or 8440
+    hosttype = "XenServer/Esxi(Vmware)/Nutanix/Azure"
+    requireddevicespace = "10%"
+    lastdaysofkb = "7"
+
+
